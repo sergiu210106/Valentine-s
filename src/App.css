@@ -1,0 +1,9 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  overflow: hidden; /* prevents scrollbars from hearts */
+}

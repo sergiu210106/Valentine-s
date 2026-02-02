@@ -1,0 +1,145 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }  
+
+body {
+    margin: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  .container {
+    position: relative;   
+    width: 100%;          
+    min-height: 100vh;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+    justify-content: center;  
+  
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  
+  
+  h1 {
+    font-size: 3rem;
+    color: #b30059;
+    margin-bottom: 40px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  
+  button {
+    width: 140px;     
+    height: 60px;  
+  
+    font-size: 1.5rem;
+    padding: 0;       
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  
+  button:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:active {
+    transform: scale(1.05);
+  }
+  
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .yes {
+    background-color: #ff4d88;
+    color: white;
+    animation: pulse 1.5s infinite;
+  }
+  
+  
+  .no {
+    background-color: #999;
+    color: white;
+  }
+
+  .button-wrapper {
+    position: relative;
+    width: 140px;     
+    height: 60px;
+  }
+  
+  
+  .response {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+  
+  .yes-text {
+    color: #800040;
+  }
+  
+  .no-text {
+    color: #4d0000;
+  }
+  
+  .heart {
+    position: absolute;
+    bottom: -20px;
+    font-size: 24px;
+    animation: floatUp 6s linear infinite;
+    opacity: 0.7;
+  }
+  
+  @keyframes floatUp {
+    from {
+      transform: translateY(0);
+      opacity: 0.8;
+    }
+    to {
+      transform: translateY(-120vh);
+      opacity: 0;
+    }
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    width: 100%;
+    max-width: 900px;
+  
+    margin: 0 auto;
+  }
+  
