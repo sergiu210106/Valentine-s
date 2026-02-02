@@ -65,7 +65,7 @@ export default function Valentine() {
   
         {answer === "no" && (
           <p className="response no-text">
-            Oh no 😢 … eu tot te iubesc haha
+            eu tot te iubesc haha
           </p>
         )}
       </div>
